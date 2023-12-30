@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Figtree', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.card{
+    /* Tamanho da borda de dentro + padding */
+    border-radius: 24.5px;
+    border: 1px solid black;
+    margin: auto;
+    width: 20vw;
+    height: auto;
+    background-color: white;
+    padding: 1.5vw;
+    box-shadow:  9px 9px 0px black;
+}
+
+.type{
+    margin: 0.5vw 0vh;
+    font-weight: 800;
+    width: min-content;
+    padding: 0.5vw;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    font-size: .8rem;
+}
+.stats span{
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.card .stateImage{
+    border-radius: 21px;
+
+    width: 20vw;
+    height: auto;
+}
+
+.mainContent h1{
+    font-size: 1.3rem;
+}
+.mainContent p{
+    font-size: .9rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 50%);
+}
+
+.autor{
+    display: flex;
+}
+.autor img{
+    width: 2vw;
+}
+.autor span{
+    /* topo | direita | inferior | esquerda */
+    margin: auto 0 auto 1vw;
+
+    font-weight: 800;
+    font-size: .8rem;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 80vw;
+        height: auto;
+        /* topo | direita | inferior | esquerda */
+        padding: 6vw 6vw 6vw 6vw;
+        border-radius: 15px;
+    }
+
+    .card .stateImage {
+        border-radius: 9px;
+        width: 80vw;
+        height: auto;
+        margin: auto;
+        display: block; /* Garante que a margem automática funcione */
+    }
+
+    .type{
+        /* topo | direita | inferior | esquerda */
+        margin: 3vh 0vw 0.8vh;
+        padding: 2vw;
+    }
+    .stats span{
+        font-weight: 600;
+        font-size: .7rem;
+    }
+    
+    .mainContent h1{
+        font-size: 1.1rem;
+    }
+    .mainContent p{
+        font-size: .8rem;
+    }
+
+    .autor img{
+        width: 7vw;
+    }
+    .autor span{
+        /* topo | direita | inferior | esquerda */
+        margin: auto 0 auto 3vw ;
+    }
+    .autor{
+        margin-top: 1vh;
+    }
+
+}
