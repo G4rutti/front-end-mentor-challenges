@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: hsl(292, 42%, 14%);
+    background-color: hsl(275, 100%, 97%);
+    width: 100vw;
+    height: 100vw;
+}
+.imgPc{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+.card{
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.39);
+    position: relative;
+    bottom: 30vh;
+    border-radius: 25px;
+    padding: 3vw;
+    background-color: white;
+    margin: auto;
+    text-align: start;
+    width: 35vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    width: 35vw;
+    display: flex;
+    margin-bottom: 4vh;
+    align-content: start;
+}
+.upper img{
+    margin-right: 1vw;
+}
+
+.attribution{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imgCelular{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 70vw;
+        padding: 8vw;
+        bottom: 20vh;
+    }
+    .imgPc{
+        display: none;
+    }
+    .imgCelular{
+        width: 100vw;
+        display: flex;
+    }
+    .upper{
+        width: 70vw;
+        align-items: center;
+    }
+    .upper h1{
+        font-size: 1.6rem;
+    }
+    .upper img{
+        width: 2rem;
+        margin-right: 5vw;
+    }
+    .attribution{
+        font-size: .7rem;
+    }
+}
